@@ -1,0 +1,5 @@
+lantern-client
+python-dotenv
+parea-ai
+asyncpg
+seaborn
