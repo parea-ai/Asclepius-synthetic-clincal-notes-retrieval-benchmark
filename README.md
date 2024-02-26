@@ -40,10 +40,13 @@ The LLM eval metric was tested on a dataset over 400 randomly-sampled samples fo
 
 ### Creation of the LLM metric
 
-Easiest step: use a zero-shot GPT-3.5-turbo-0125 based evaluation.
+The easiest way to create a LLM-based eval metric is to use a zero-shot GPT-3.5-turbo-0125 based evaluation.
 The prompt instructs the model to assess whether the answer to a given question is among 20 retrieved results. 
 It uses JSON mode to instruct the model to return a field called thoughts (which gives the model the ability to think 
 before deciding) and a field called final_verdict (which is used to parse the decision of the LLM).
+This is encapsulated in Parea's pre-built LLM evaluation (Link to 
+[Python implementation](https://github.com/parea-ai/parea-sdk-py/blob/main/parea/evals/rag/context_has_answer.py)
+and [docs](https://docs.parea.ai/api-reference/sdk/python#context-has-answer-factory)).
 
 
 #### Using Few-Shot Examples
@@ -54,7 +57,7 @@ To improve the accuracy of the LLM-based eval metric, few-shot examples were use
 - few shot example 2: an example where `bge-base-en-v1.5` didn’t retrieve the right answer for a paraphrasing task
     - name is indicated by `false_2` / `false_sample_2` in evaluation metric name
 
-  
+The implementation of the eval metrics are in [evals.py](evals.py).
 
 ### Results
 
@@ -70,6 +73,15 @@ The results are presented as a heatmap measuring accuracy, false positive (fpr) 
 
 ![Heatmap](analysis-llm-eval-qa.png)
 
+Link to experiments:
+
+- [jina-v2-base-en Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/65a69670-43ec-4f7e-8025-e1f04360a149)
+- [bge-base-en-v1.5 Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/1780cc81-825f-4273-91ee-01151473d41c)
+- [text-embedding-3-small 512-dims Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/3aa6a7ae-28bb-4570-92c2-9a8347f42cb9)
+- [text-embedding-3-small 1536-dims Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/192b0f86-aca5-4e7e-b251-85a89ea975d8)
+- [text-embedding-3-large 256-dims Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/64518f1b-9f77-4daf-a316-c3671e42f4d8)
+- [text-embedding-3-large 3072-dims Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/8704644b-db26-4b44-8c61-778eeaec59d4)
+
 
 ### Paraphrasing Task
 
@@ -80,18 +92,8 @@ The results are presented as a heatmap measuring accuracy, false positive (fpr) 
 
 ![Heatmap](analysis-llm-eval-para.png)
 
+Link to experiments:
 
-### Link to Experiments
-
-Question Answering:
-- [jina-v2-base-en Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/65a69670-43ec-4f7e-8025-e1f04360a149)
-- [bge-base-en-v1.5 Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/1780cc81-825f-4273-91ee-01151473d41c)
-- [text-embedding-3-small 512-dims Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/3aa6a7ae-28bb-4570-92c2-9a8347f42cb9)
-- [text-embedding-3-small 1536-dims Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/192b0f86-aca5-4e7e-b251-85a89ea975d8)
-- [text-embedding-3-large 256-dims Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/64518f1b-9f77-4daf-a316-c3671e42f4d8)
-- [text-embedding-3-large 3072-dims Q&A 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/8704644b-db26-4b44-8c61-778eeaec59d4)
-
-Paraphrasing:
 - [jina-v2-base-en Paraphrasing 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/c5984bad-41d4-4dbd-b3a4-e0fc03323eab)
 - [bge-base-en-v1.5 Paraphrasing 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/e48d3ea3-1d92-498e-82bb-7967b49d6a9b)
 - [text-embedding-3-small 512-dims Paraphrasing 400 samples](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/80ce6c32-6bf4-4b7f-aa93-bc2f528c4dbb)
