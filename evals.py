@@ -1,11 +1,18 @@
 import json
+import os
 import re
 from typing import Callable
 
+from dotenv import load_dotenv
+from openai import OpenAI
 from parea.schemas.log import Log
 
-from experiment import client
 from retry_manager import retry_decorator
+
+
+load_dotenv()
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 def eval_fun_factory(model: str, eval_fun_name: str, messages: list[dict[str, str]]) -> Callable[[Log], float]:
