@@ -69,10 +69,10 @@ def load_data(emb_model: str, limit: int, task) -> list[dict[str, int | str]]:
 
 
 if __name__ == "__main__":
-    num_data = 400
+    num_data = None
 
     tasks = ['Paraphrasing', 'Question Answering']
-    embedding_models = ['openai_small_min', 'openai_small_max', 'openai_large_min', 'openai_large_max']
+    embedding_models = ['openai_old', 'jina_base']
 
     configs = []
     for emb_model in embedding_models:

@@ -5,26 +5,28 @@
 
 ### Question Answering Task
 
-| Model | Embedding Dim | Hit Rate @ 20 | MRR @ 20 | Link to Experiment                                                                                                       |
-| --- | --- | --- | --- |--------------------------------------------------------------------------------------------------------------------------|
-| jina-v2-base-en | 768 | 0.51 | 0.37 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/e7c2235d-ffa2-4273-84ce-c97657754645) |
-| bge-base-en-v1.5 | 768 | 0.81 | 0.70 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/9471ccfd-ec87-4316-bc77-ba8314753cf4) |
-| text-embedding-3-small | 512 | 0.84 | 0.73 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/a17752e5-8095-45b1-a864-e838c54e7974) |
-| text-embedding-3-small | 1536 | 0.84 | 0.73 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/ab4713fc-0a28-431f-8f86-94664cfe38dc) |
-| text-embedding-3-large | 256 | 0.82 | 0.68 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/bb583b9b-2ecb-43d9-8fc8-d20c2deacb86) |
-| text-embedding-3-large | 3072 | 0.85 | 0.73 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/b1655759-b460-40f8-b394-ad152f953973) |
+| Embedding Model        | Embedding Dimension | Hit Rate @ 20 | MRR @ 20 | Link to Experiment                                                                                                       |
+|------------------------|---------------------|---------------|----------|--------------------------------------------------------------------------------------------------------------------------|
+| jina-v2-base-en        | 768                 | 0.51          | 0.37     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/e7c2235d-ffa2-4273-84ce-c97657754645) |
+| bge-base-en-v1.5       | 768                 | 0.81          | 0.70     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/9471ccfd-ec87-4316-bc77-ba8314753cf4) |
+| text-embedding-ada-002 | 1536                | 0.81          | 0.69     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/26628eba-3719-4080-8d32-229ca382b50b) |
+| text-embedding-3-small | 512                 | 0.84          | 0.73     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/a17752e5-8095-45b1-a864-e838c54e7974) |
+| text-embedding-3-small | 1536                | 0.84          | 0.73     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/ab4713fc-0a28-431f-8f86-94664cfe38dc) |
+| text-embedding-3-large | 256                 | 0.82          | 0.68     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/bb583b9b-2ecb-43d9-8fc8-d20c2deacb86) |
+| text-embedding-3-large | 3072                | 0.85          | 0.73     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/b1655759-b460-40f8-b394-ad152f953973) |
 
 
 ### Paraphrasing Task
 
-| Model | Embedding Dim | Hit Rate @ 20 | MRR @ 20 | Link to Experiment                                                                                                       |
-| --- | --- | --- | --- |--------------------------------------------------------------------------------------------------------------------------|
-| jina-v2-base-en | 768 | 0.07 | 0.04 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/5e40886d-7e41-4f1e-8369-3d5c3bd2765b) |
-| bge-base-en-v1.5 | 768 | 0.50 | 0.37 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/81fae839-8945-42a4-90e4-78e2a3b84648) |
-| text-embedding-3-small | 512 | 0.59 | 0.46 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/9625a8b6-3295-464b-ba44-ffa2e8ae314d) |
-| text-embedding-3-small | 1536 | 0.59 | 0.46 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/2340a279-d91d-481b-9f52-e517678f8d99) |
-| text-embedding-3-large | 256 | 0.61 | 0.44 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/91e1afc5-fb64-4a8b-9866-8ab3f2ce01c0) |
-| text-embedding-3-large | 3072 | 0.64 | 0.48 | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/e68de8bd-d00c-41aa-8390-56c19b22af67) |
+| Embedding Model        | Embedding Dimension | Hit Rate @ 20 | MRR @ 20 | Link to Experiment                                                                                                       |
+|------------------------|---------------------|---------------|----------|--------------------------------------------------------------------------------------------------------------------------|
+| jina-v2-base-en        | 768                 | 0.07          | 0.04     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/5e40886d-7e41-4f1e-8369-3d5c3bd2765b) |
+| bge-base-en-v1.5       | 768                 | 0.50          | 0.37     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/81fae839-8945-42a4-90e4-78e2a3b84648) |
+| text-embedding-ada-002 | 1536                | 0.57          | 0.44     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/0029f82d-7b92-4981-a60d-4cd5126651a8) |
+| text-embedding-3-small | 512                 | 0.59          | 0.46     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/9625a8b6-3295-464b-ba44-ffa2e8ae314d) |
+| text-embedding-3-small | 1536                | 0.59          | 0.46     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/2340a279-d91d-481b-9f52-e517678f8d99) |
+| text-embedding-3-large | 256                 | 0.61          | 0.44     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/91e1afc5-fb64-4a8b-9866-8ab3f2ce01c0) |
+| text-embedding-3-large | 3072                | 0.64          | 0.48     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/e68de8bd-d00c-41aa-8390-56c19b22af67) |
 
 
 
