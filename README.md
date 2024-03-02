@@ -7,7 +7,7 @@
 
 | Embedding Model        | Embedding Dimension | Hit Rate @ 20 | MRR @ 20 | Link to Experiment                                                                                                       |
 |------------------------|---------------------|---------------|----------|--------------------------------------------------------------------------------------------------------------------------|
-| jina-v2-base-en        | 768                 | 0.51          | 0.37     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/e7c2235d-ffa2-4273-84ce-c97657754645) |
+| jina-v2-base-en        | 768                 | 0.82          | 0.72     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/99e5aedb-8aa4-420d-803d-8c30a6e48ec5) |
 | bge-base-en-v1.5       | 768                 | 0.81          | 0.70     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/9471ccfd-ec87-4316-bc77-ba8314753cf4) |
 | text-embedding-ada-002 | 1536                | 0.81          | 0.69     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/26628eba-3719-4080-8d32-229ca382b50b) |
 | text-embedding-3-small | 512                 | 0.84          | 0.73     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/a17752e5-8095-45b1-a864-e838c54e7974) |
@@ -20,7 +20,7 @@
 
 | Embedding Model        | Embedding Dimension | Hit Rate @ 20 | MRR @ 20 | Link to Experiment                                                                                                       |
 |------------------------|---------------------|---------------|----------|--------------------------------------------------------------------------------------------------------------------------|
-| jina-v2-base-en        | 768                 | 0.07          | 0.04     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/5e40886d-7e41-4f1e-8369-3d5c3bd2765b) |
+| jina-v2-base-en        | 768                 | 0.42          | 0.32     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/0e6ef8cf-6bd0-4622-a5ea-aae56bec1200) |
 | bge-base-en-v1.5       | 768                 | 0.50          | 0.37     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/81fae839-8945-42a4-90e4-78e2a3b84648) |
 | text-embedding-ada-002 | 1536                | 0.57          | 0.44     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/0029f82d-7b92-4981-a60d-4cd5126651a8) |
 | text-embedding-3-small | 512                 | 0.59          | 0.46     | [here](https://app.parea.ai/public-experiments/parea/Asclepius-retrieval-benchmark/9625a8b6-3295-464b-ba44-ffa2e8ae314d) |

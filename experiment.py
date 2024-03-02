@@ -72,7 +72,7 @@ if __name__ == "__main__":
     num_data = None
 
     tasks = ['Paraphrasing', 'Question Answering']
-    embedding_models = ['openai_old', 'jina_base']
+    embedding_models = ['jina_base_fixed']
 
     configs = []
     for emb_model in embedding_models:
@@ -95,4 +95,4 @@ if __name__ == "__main__":
 
         pbar.set_description(f"Running {experiment_name} ...")
 
-        p.experiment(data=data, func=get_answer).run(name=experiment_name)
+        p.experiment(data=data, func=get_answer, n_workers=5).run(name=experiment_name)
